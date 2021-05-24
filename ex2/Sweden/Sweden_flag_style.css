@@ -1,0 +1,53 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.grid {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 5fr 2fr 9fr;
+	grid-template-rows: 4fr 2fr 4fr 
+
+}
+
+
+
+.green1 {
+	background-color: rgb(20,102,160);
+	grid-column:1;
+	grid-row: 1;
+}
+
+.green2 {
+	background-color: rgb(20,102,160);
+	grid-column:3;
+	grid-row: 1;
+
+}
+
+.green3 {
+	background-color: rgb(20,102,160);
+	grid-column:1;
+	grid-row: 3;
+
+}
+
+.green4 {
+	background-color: rgb(20,102,160);
+	grid-column:3;
+	grid-row: 3;
+
+}
+
+.yellow1 {
+	background-color: rgb(251,208,8) ;
+	grid-area: 1/2/4/3
+}
+
+.yellow2 {
+	background-color: rgb(251,208,8);
+	grid-area: 2/1/2/4
+}
+
