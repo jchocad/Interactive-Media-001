@@ -1,0 +1,93 @@
+html, body {
+	height: 200%;
+	margin: 0;
+	padding: 0;
+
+}
+
+.page-grid {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr ;
+	grid-column-gap: 5px;
+	grid-row-gap: 30px;
+
+
+}
+
+.pagegrid-item {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+
+}
+
+.page1-grid {
+    display: grid;
+    width:100%;
+    height: 100%;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr ;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	 
+}
+.page2-grid {
+    display: grid;
+    width:100%;
+    height: 100%;
+	grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+	grid-template-rows: 2fr 3fr 2fr ;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	 
+}
+
+
+.h1 {
+	text-align: center;
+	font-size: 80px;
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+}
+
+.b1{
+	text-align: center;
+	font-size: 30px;
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+
+}
+
+.b2{
+	text-align: left;
+	font-size: 30px;
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+
+}
+
+
+
+.h2 {
+	text-align: right;
+	font-size: 80px;
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+}
+
+.page_top {
+	position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 99;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    background: black;
+    color: white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 50%;
+   }
