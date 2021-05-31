@@ -1,0 +1,172 @@
+	body {
+		margin: 100px 100px; 
+	}
+
+@keyframes flying{
+	50%
+	{transform: translate3d(0, -300px, 0);
+	}
+
+
+	.up {
+		display: block;
+		text-align: center;
+		}
+	}
+
+	.up span{
+		display: inline-block;
+		color: black;
+		
+	}
+	
+	.up:hover span {
+		  color: rgb(131,172,255);
+		  animation-name: flying;
+		  animation-duration: 4s;
+		  animation-direction: alternate-reverse;
+	}
+
+	.up:hover span:nth-child(2) {
+	 animation-delay: .1s;
+    }
+
+
+ @keyframes lightup {
+ 	  50% {
+ 	  	text-shadow: 0 0 10px #e62f8b,0 0 15px #e62f8b
+  }
+ }
+
+    .brun {
+		display: block;
+		text-align: center;
+		}
+
+	.brun span{
+		display: inline-block;
+		color: black;
+		
+	}
+	
+	.brun:hover span {
+		  color: rgb(214,66,85);
+		  box-shadow: linear-gradient(270deg,transparent,#e62f8b);
+		  animation-name: lightup; 
+		  animation-duration: 5s;
+		  animation-direction: infinite;
+	}
+
+
+	@keyframes filp {
+		50%
+		{transform: rotateY(180deg)
+	    }
+	}
+
+    .loading {
+		display: block;
+		text-align: center;
+		}
+
+	.loading span{
+		display: inline-block;
+		color: black;
+		
+	}
+	
+	.loading:hover span {
+		  color: rgb(0,0,85);
+		  animation-name: filp;
+		  animation-duration: 2s;
+		  animation-direction: alternate-reverse;
+	}
+
+	.loading:hover span:nth-child(2) {
+	 animation-delay: .1s;
+    }
+
+    .loading:hover span:nth-child(3) {
+	 animation-delay: .2s;
+    }
+
+    .loading:hover span:nth-child(4) {
+	 animation-delay: .3s;
+    }
+
+    .loading:hover span:nth-child(5) {
+	 animation-delay: .4s;
+    }
+
+    .loading:hover span:nth-child(6) {
+	 animation-delay: .5s;
+    }
+
+    .loading:hover span:nth-child(7) {
+	 animation-delay: .5s;
+    }
+
+
+
+
+
+
+	.body1{
+		font-size: 80px;
+		font-family: carlmarx,sans-serif;
+		font-weight: 700;
+		font-style: normal
+	}
+
+
+	.body2{
+		font-size: 80px;
+		font-family: gautreaux,sans-serif;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	.body3{
+		font-size: 80px;
+		font-family: export,sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	
+
+
+
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3,33.33%);
+		grid-template-rows: 30% 70%;
+		border: 1px 
+		height: 800px
+	}
+
+	.grid div{
+		border: 1px 
+	}
+
+	.header {
+		grid-column-start: 1;
+		grid-column-end: span 3;
+		background-color: rgb(200,200,200);
+	}
+
+	h1 {
+		color: rgb(255,255,255);
+		font-size: 100px;
+		text-align: left;
+		font-family: axia-stencil, sans-serif;
+		font-weight: 900;
+		font-style: normal;
+	}
+
+
+	.text-grid {
+		padding-top: 300px;
+		text-align: center;
+	}
