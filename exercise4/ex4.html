@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 4: iFrames</title>
+	<link rel="stylesheet" href="https://use.typekit.net/nuh7daj.css">
+	 <link rel="stylesheet" type="text/css" href="ex4_style.css">
+</head>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+<body>
+	<div class="page-gird">
+	   <div class="header1 fadein show">
+
+	       <h1> Japan Onsen tours plan</h1>
+	       <h2>Information of Onsen hotel</h2>
+
+
+	       </div>
+
+	   <div class="body fadein2 show">
+	   	 <div class="box">
+	   	 	<iframe src="https://okuyugawara.jp/" width="100%" height="300" ></iframe>
+	   	 	<h2>okuyugawara</h2>
+
+	   	 	<iframe src="http://www.matsumotoro.com/" width="100%" height="300" ></iframe>
+	   	 	<h2>matsumotoro</h2>
+	   	 	
+	   	 	<iframe src="http://www.konansou.com/" width="100%" height="300" ></iframe>
+	   	 	<h2>konansou</h2>
+	   	 	
+	   	 	<iframe src="https://yamagatakan.com/" width="100%" height="300" ></iframe>
+	   	 	<h2>yamagatakan</h2>
+	   	 	
+	   	 	<iframe src="https://www.oyado-tamaki.com/index.html?y_source=1_MTc0OTcxOTUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D" width="100%" height="300" ></iframe>
+	   	 	<h2>oyado-tamaki</h2>
+	   	 	
+
+	   	 </div>
+
+
+
+	   </div>
+	   </div>
+
+<script>
+		$(function(){
+   $(window).on('load scroll', function() {
+      var winScroll = $(window).scrollTop();
+      var winHeight = $(window).height();
+      var scrollPos = winScroll + (winHeight * 0.8);
+
+      $(".show").each(function() {
+         if($(this).offset().top < scrollPos) {
+            $(this).css({opacity: 1, transform: 'translate(0, 0)'});
+         }
+      });
+   });
+});
+	</script>
+
+
+
+</body>
+
+
+</html>
