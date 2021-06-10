@@ -1,0 +1,50 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.page-grid {
+		display: grid;
+	    width: 100%;
+	    height: 100%;
+	    grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 2fr 5fr 1fr;
+        background-color: #ffffff;
+		opacity: 1;
+		background-image:  linear-gradient(#e7e8ee 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(90deg, #e7e8ee 2.8000000000000003px, transparent 2.8000000000000003px), linear-gradient(#e7e8ee 1.4000000000000001px, transparent 1.4000000000000001px), linear-gradient(90deg, #e7e8ee 1.4000000000000001px, #ffffff 1.4000000000000001px);
+		background-size: 70px 70px, 70px 70px, 14px 14px, 14px 14px;
+		background-position: -2.8000000000000003px -2.8000000000000003px, -2.8000000000000003px -2.8000000000000003px, -1.4000000000000001px -1.4000000000000001px, -1.4000000000000001px -1.4000000000000001px;
+}
+
+
+.body {
+		grid-area: 2/2/2/2;
+	　　
+}
+
+.box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: gray;
+    border: double 5px;
+    background-color: #ffffff;
+}
+
+
+p{
+    text-align: left;
+	font-size: 18px;
+	padding-left: 30px;
+	margin-bottom:30px; 
+	color: rgb(98,99,105);
+	text-decoration: none;
+	border-bottom: 10px;
+	white-space:pre-line;
+	font-family: houschka-rounded, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+
+}
