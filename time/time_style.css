@@ -1,0 +1,144 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.page-grid {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 4fr 3fr 4fr;
+	grid-template-rows: 5fr 2fr 5fr ;
+}
+
+
+
+/*timer setting*/
+
+
+
+.contbar {
+	grid-area: 2/2/2/2;
+}
+
+
+#contdown {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	font-size: 150px; 
+	margin-top: 60px;
+	margin-left: 150px;
+}
+/*timer text*/
+p{
+	text-align: center;
+	font-size: 80px; 
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+	text-decoration: none;
+	line-height: 30px;
+	margin-top: 60px;
+
+}
+
+
+
+
+/*background animation*/
+
+/*oringal background*/
+.background1 {
+	width: 100%;
+	height: 100%;
+	background: #6C8BA1;
+	position: relative;
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+
+}
+
+/*background with animation*/
+.background {
+	width: 100%;
+	height: 100%;
+	background: #6C8BA1;
+	position: relative;
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	animation: wave-colur 30s;
+
+}
+
+/*oringal wave*/
+.wave1 {
+	position: absolute;
+}
+
+/*with animation*/
+.wave {
+	opacity: .2;
+	position: absolute;
+	left:50%;
+	background-color: #464BA3;
+	width: 3200px;
+	height: 3200px;
+	margin-left: -1700px;
+	-webkit-transform-origin: 50% 48%;
+	transform-origin: 50% 48%;
+	border-radius: 35%;
+	animation: drift 15s infinite linear, wave-hight 30s;
+}
+
+
+/*wave drift animation*/
+@-webkit-keyframes drift {
+	
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+
+	}
+	from { 
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+/*wave hight animation*/
+
+@keyframes wave-hight {
+	0% {
+		margin-top: -2200px;
+	}
+
+	60% {
+		margin-top: -2900px;
+	}
+	100% {
+		margin-top: -3300px;
+	}
+}
+
+/*background animation*/
+@keyframes wave-colur {
+	0% {
+		background: #6C8BA1;
+	}
+	25% {
+		background: #EDCFCE;
+	}
+	50% {
+		background: #B7D8EE;
+	}
+	75% {
+		background: #EDED9F;
+	}
+	100% {
+		background: #A1A074;
+	}
+}

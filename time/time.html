@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Duration(time)</title>
+	<link rel="stylesheet" type="text/css" href="time_style.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+
+
+<body>
+	<div id="background0" class="background1">
+		<div class="page-grid">
+			<div class="contbar">
+				<div id="contdown"><p id="timer"> click </p></div>
+			</div>
+			<div id="wave0" class="wave1"></div>
+
+		</div>
+	</div>
+
+
+	<script>
+		/*timer*/
+		for(var i = 1000; i > 0; i--){
+			timer_block();
+		}
+
+		/*set for repite*/
+
+
+		function timer_block(){
+			document.getElementById("contdown").onclick = function() {
+
+				/*set time=30s*/
+
+				var duration = 30;
+				var x = setInterval(countdown, 1000);
+
+				function countdown(){
+
+					document.getElementById("timer").innerHTML = duration;
+					duration -= 1;
+
+					/*set animation*/
+
+					if (duration >0) {
+						document.getElementById("background0").classList.add("background");
+						document.getElementById("wave0").classList.add("wave")
+
+					}
+
+					/*stop at 0, and remove everything*/
+
+					else if(duration < 0){
+						document.getElementById("timer").innerHTML = "click";
+						document.getElementById("wave0").classList.remove("wave");
+						document.getElementById("background0").classList.remove("background");
+						clearInterval(x);}
+					}
+
+				}
+			}
+
+
+		</script>
+	</body>
+	</html> 
