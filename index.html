@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <title>Github page </title>
-	 <link rel="stylesheet" type="text/css" href="index_style.css">
+	<title>Github page </title>
+	<link rel="stylesheet" type="text/css" href="index_style.css">
 </head>
 <link rel="stylesheet" href="https://use.typekit.net/nuh7daj.css">
 
@@ -15,132 +15,121 @@
 
 
 
-        <!--page1-->
-			<div class="page1-grid">
-				
-				<div class="page1-header fadein show">
+		<!--page1-->
+		<div class="page1-grid">
 
-					<h1>Hi.</h1>  
+			<div class="page1-header fadein show">
 
-					<h2>
+				<h1>Hi.</h1>  
+
+				<h2>
 					Wellcom, this is my index for my school project
-				    </h2>
+				</h2>
+
+				 <img src="https://raw.githubusercontent.com/jchocad/Interactive-Media-001/main/images/image-dod.png" width="50" height="50">
+
+			</div>
 			
-				</div>
-			
-	        </div>
+		</div>
 
 
 
 		<!--page2-->
 
-			<div class="page2-grid">
-				
-				<div class="page2-header fadein-right show">
-					<h3>INDEX.</h3>
+		<div class="page2-grid">
+
+			<div class="page2-header fadein-right show">
+				<h3>INDEX.</h3>
+
+			</div>
+
+			<div class="Exercise-content fadein show">
+				<h4>Exercise</h4>
+				<div class="cp_ex_slide01">
+
+					<a class="slideitem" href="work1.html" >
+						<p>01</p></a>
+
+					<a class="slideitem" href="work2.html">
+						<p>02</p></a>
+						
+					<a class="slideitem" href="work3.html">
+						<p>03</p></a>
+
+					<a class="slideitem" href="work4.html">
+						<p>04</p></a>
+
+
+					<a class="slideitem" href="work5.html">
+						<p>05</p></a>
 
 				</div>
 
-				<div class="Exercise-content fadein show">
-					<h4>Exercise</h4>
-					<div class="cp_ex_slide01">
 
-						<a class="slideitem" href="work1.html" ><p>01</p></a>
+			</div>
 
-						<div class="slideitem">
-							<p>02</p>
-						</div>
-						
-						<div class="slideitem">
-							<p>03</p>
-						</div>
-						
-						<div class="slideitem">
-							<p>04</p>
+
+					<div class="project-content fadein2 show">
+						<h4>Project</h4>
+
+
+						<div class="cp_pr_slide01">
+
+							<a class="slideitem" href="p1.html"><p>01</p></a>
+
+							<a class="slideitem" href="p2.html"><p>02</p></a>
+							
+							<a class="slideitem" href="p3.html"><p>03</p></a>
+
 						</div>
 
-						<div class="slideitem">
-							<p>05</p>
-						</div>
 
 					</div>
 
-				
+
 				</div>
 
 
-				<div class="project-content fadein2 show">
-					<h4>Project</h4>
-					   
 
-					   <div class="cp_pr_slide01">
-						
-						<a class="slideitem" href="" ><p>01</p></a>
 
-						<div class="slideitem">
-							<p>02</p>
-						</div>
-						
-						<div class="slideitem">
-							<p>03</p>
-						</div>
-						
-						<div class="slideitem">
-							<p>04</p>
-						</div>
+			</div>
 
-						<div class="slideitem">
-							<p>05</p>
-						</div>
 
-					</div>
-					
-					
+
+			<footer>
+				<div id="pagetop">
+					　　<a href="#">back to top</a>
 				</div>
-				
-			
-	        </div>
+			</footer>
 
 
-					 	 
+			<script>
 
-    </div>
+				$(function(){
+					$(window).on('load scroll', function() {
+						var winScroll = $(window).scrollTop();
+						var winHeight = $(window).height();
+						var scrollPos = winScroll + (winHeight * 0.8);
 
+						$(".show").each(function() {
+							if($(this).offset().top < scrollPos) {
+								$(this).css({opacity: 1, transform: 'translate(0, 0)'});
+							}
+						});
+					});
+				});
 
-	 
-<footer>
-	 <div id="pagetop">
-　　<a href="#">back to top</a>
-</div>
-</footer>
- <script>
+			</script>
 
-$(function(){
-   $(window).on('load scroll', function() {
-      var winScroll = $(window).scrollTop();
-      var winHeight = $(window).height();
-      var scrollPos = winScroll + (winHeight * 0.8);
-
-      $(".show").each(function() {
-         if($(this).offset().top < scrollPos) {
-            $(this).css({opacity: 1, transform: 'translate(0, 0)'});
-         }
-      });
-   });
-});
-
-	</script>
-
-	<script> 
-		$('#pagetop').click(function () {
- $('body,html').animate({
-  scrollTop: 0
- }, 700);
- return false;
-});
-	</script>
+			<script> 
+				$('#pagetop').click(function () {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 700);
+					return false;
+				});
+			</script>
 
 
-</body>
-</html>
-
+		</body>
+		</html>
