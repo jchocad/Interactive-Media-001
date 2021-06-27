@@ -9,9 +9,9 @@ html, body {
 .page-grid {
 		display: grid;
 	    width: 100%;
-	    height: 100%;
+	    height: 120%;
 	    grid-template-columns: 2fr 5fr 2fr;
-        grid-template-rows: 1fr 4fr 5fr 2fr 1.5fr;
+        grid-template-rows: 1fr 4fr 5fr 5fr 2fr 1.5fr;
 }
 
 
@@ -28,7 +28,7 @@ h1{
 	font-size: 23px;
 	padding-left: 30px;
 	margin-bottom:0px; 
-	color: rgb(277,277,277);
+	color: #FFFFFF;
 	font-family: "Uni Sans Thin",sans-serif;
 	text-decoration: none;
 	border-bottom: 10px
@@ -56,9 +56,20 @@ h2{
 	color: rgb(177,177,177);
 	font-family: "Uni Sans Thin",sans-serif;
 	text-decoration: none;
+	margin-right: 230px;
 	line-height: 30px;
 	margin-top: 150px;
 	margin-bottom: 10px
+
+}
+
+h4{
+    text-align: center;
+	font-size: 45px; 
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+	text-decoration: none;
+	margin: 30px;
 
 }
 
@@ -69,21 +80,21 @@ h2{
 	        box-sizing: border-box;
 }
 .cp_cssslider {
-	width: 1300px;
-	padding-top: 600px;
+	width: 1800px;
+	padding-top: 800px; 
 	position: relative;
 	margin: 2em auto;
 	text-align: center;
 }
 
-.cp_cssslider > img {
+.cp_cssslider > iframe {
 	position: absolute;
 	left: 0;
 	top: 0;
 	transition: all 0.5s;
 	border-radius: 3px;
-	width: 1300px;
-	height: 600px;
+	width: 1800px;
+	height: 800px;
 	object-fit: cover;
 	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
 }
@@ -93,9 +104,10 @@ h2{
 }
 
 
+/*samll photo*/
 .cp_cssslider label {
 	margin: 15px 5px 0 5px;
-	border: 2px solid #ffffff;
+	border: 2px solid #B1B1B1;
 	display: inline-block;
 	cursor: pointer;
 	transition: all 0.5s ease;
@@ -105,22 +117,36 @@ h2{
 .cp_cssslider label:hover {
 	opacity: 0.9;
 }
-.cp_cssslider label img {
+.cp_cssslider label iframe {
 	display: block;
-	width: 40px;
+	width: 45px;
+	height: 30px;
 	border-radius: 2px;
 }
 .cp_cssslider input[name='cp_switch']:checked + label {
-	border: 2px solid #FF7043;
+	border: 2px solid #FFC5C5;
 	opacity: 1;
 }
-.cp_cssslider input[name='cp_switch'] ~ img {
+.cp_cssslider input[name='cp_switch'] ~ iframe {
 	opacity: 0;
 }
-.cp_cssslider input[name='cp_switch']:checked + label + img {
+.cp_cssslider input[name='cp_switch']:checked + label + iframe {
 	opacity: 1;
 }
 
+
+h3{
+	font-size: 23px;
+	text-align: center;
+	margin-bottom:5px; 
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+	text-decoration: none;
+
+}
 
 
  /*footer*/
@@ -143,3 +169,22 @@ footer a{
 	text-decoration: none;
 }
 
+.cp_an {
+	width: 1000px;
+	padding-top: 500px; 
+	position: relative;
+	margin: 2em auto;
+	text-align: center;
+}
+
+.cp_an > iframe {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	transition: all 0.5s;
+	border-radius: 3px;
+	width: 1000px;
+	height: 500px;
+	object-fit: cover;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+}

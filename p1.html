@@ -3,6 +3,7 @@
 <head>
 	<title>work</title>
 	 <link rel="stylesheet" type="text/css" href="p1_style.css">
+ 	 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 
 </head>
@@ -38,14 +39,18 @@
 </div>
 </footer>
 
-	<script> 
-		$('#pagetop').click(function () {
- $('body,html').animate({
-  scrollTop: 0
- }, 700);
- return false;
-});
-	</script>
+<script>
+	$(function(){
+		$('a[href^="#"]').click(function(){
+			let speed = 400;
+			let href= $(this).attr("href");
+			let target = $(href == "#" || href == "" ? 'html' : href);
+			let position = target.offset().top;
+			$("html, body").animate({scrollTop:position}, speed, "swing");
+			return false;
+		});
+	});
+</script>
 
 
 </body>

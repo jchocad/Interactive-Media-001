@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>work</title>
+	 <link rel="stylesheet" type="text/css" href="r2_style.css">
+	 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</head>
+
+</head>
+<body>
+	<div class="page-grid">
+		<div class="header">
+			<a href="index.html"><h1>work</h1></a>
+		</div>
+		<div class="body">
+			<h2>Reading2</h2>
+		</div>
+		<div class="workshow">
+
+			<a href="https://frankchimero.com/blog/2013/what-screens-want/" class="p_link">
+				What Screens Want by Frank Chimero<div class="link icon"></div></a>
+			<h3>
+				1.Where do you stand with the two ideological camps: flat and skeuo? For example, do you think one is "better" than the other or do you strongly believe in one or the other.
+			</h3>
+
+			<p>
+				I am standing on skeuo of theis two ideological camps. In my opiness, as a designer I need to think not just about myself. I need to think about my audiness and think of a way to make their product experiences easier and get started quickly. In this way, I think skeuo is better than flat. Flat thinks the screen is flat, and should not refrennes to a three-dimensional world. But I think when I make a new media on screen which is based on a three-dimensional world, the things that exist in people's daily life can make audiness easily accustomed to it. Because they understood the concept of the media, it was something they knew but changing to the new shape, it was still the things they needed. 
+
+			</p>
+
+			<h3>
+				2.What is a zoopraxiscope and how does it relate to web and interaction design? Find another example from filmmaking or another medium that has inspired digital design.
+
+			</h3>
+
+			<p>
+				The origin of Zoopraxiscope was a continent horse photograph invented by a British photographer. He has taken a photo of a horse running in every scounde, and printed it on a glass-disc. When the glass-disc is illuminated from behind, it will show the movement of the horse running. The incense called it Zoopraxiscope, and this is one of the origins of the screen too. Zoopraxiscope and web and interaction design were both on screen. Screen was a neature materio, it is in there all the time, which can give the power of giving things a movement, a variability, the author called theis as flux in the article. For example, when you visit the website of Apple, you will find out that the image or text will bring a movement and animation when you scroll up and down, I think that was the meaning of flux.
+			</p>
+
+			<h3>
+				3. Do you agree with that screens want "flux"? Explain why you do or do not.
+
+			</h3>
+
+			<p>
+				I agree that screens need "flux". A screen was a nature matrio, and flux was a developability element of screens, it was controllable and variably way which can be done in the detail design. An over flux may not be a good thing, but an appropriate flux can help describe and simplify the information for the user, which can finish the goal of  optimizing user experience. 
+			</p>
+
+
+		</div>
+
+
+</div>
+
+<footer>
+	 <div id="pagetop">
+　　<a href="#">back to top</a>
+</div>
+</footer>
+
+<script>
+
+
+	$(function(){
+		$('a[href^="#"]').click(function(){
+			let speed = 400;
+			let href= $(this).attr("href");
+			let target = $(href == "#" || href == "" ? 'html' : href);
+			let position = target.offset().top;
+			$("html, body").animate({scrollTop:position}, speed, "swing");
+			return false;
+		});
+	});
+</script>
+
+
+</body>
+</html>

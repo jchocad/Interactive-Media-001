@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>work</title>
+	 <link rel="stylesheet" type="text/css" href="r3_style.css">
+	 <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</head>
+
+</head>
+<body>
+	<div class="page-grid">
+		<div class="header">
+			<a href="index.html"><h1>work</h1></a>
+		</div>
+		<div class="body">
+			<h2>Reading3</h2>
+		</div>
+		<div class="workshow">
+
+			<a href="http://contemporary-home-computing.org/turing-complete-user/" class="p_link">
+				Touring Complete User by Olia Lialina <div class="link icon"></div></a>
+			<h3>
+				1.What do you think is Lialina's opinion of the word "user"? 
+			</h3>
+
+			<p>
+				In the article, Lialina gave some examples of people who are opposed to using the word ‘user’, in their opinion, they think they should design for people, not ‘user’. However, I think in Lialina’s opinion, users and developers should be distinguished.  Users should have the right to be protected when they use the product.  Developers need to deal with a lot of repetitive work behind a computer, but at the same time, it should also be noted that their work is not only for invisible the computer, but also needs to design for the user. Users and developers are different, many times users don’t know how to program and they are busy with other things. Users are the imagination of developers, so that developers need to know that users are different from themself, users are the people who should enjoy the most interesting part.  
+
+
+			</p>
+
+			<h3>
+				2.What is Lialina's ideal internet user? Provide some of the qualities that she outlines.
+
+
+			</h3>
+
+			<p>
+				Lialinas calls her ideal internet user a universal user. Universal user was the apply by universal concept of technology, to create a concept of user for developers. In Lialina's opinion, a universal user was not a super user and hacker. A universal user can imagine different examples and degree of autonomy, they can do some degree of custom change. A universal usually will have other things to do that will take more time, so that they usually will not use time to understand the program. In their mind, hardware and software were connected. What they need more is convenience and transparency.
+
+			</p>
+
+			<h3>
+				3.From your own experiences interacting on the web—what is an example where there are "gaps that can be filled by users"?
+
+
+			</h3>
+
+			<p>
+				In my own experiences interacting on the web, I have seen some good examples of "have gaps that can be filled by users". Some website or blog design software will usually give different temples and layouts for users to choose. And then they will give users customize the size, image, background, colour,add an addon or changeable css/html for user design of their own blog. Also, for example, chrome and google meau was giving a gap for users to add or delete the tool they want or they don’t want, also, google allowed users to upload their originale chrome plugin to extend more functions for chrome. 
+			</p>
+
+
+		</div>
+
+
+</div>
+
+<footer>
+	 <div id="pagetop">
+　　<a href="#">back to top</a>
+</div>
+</footer>
+
+<script>
+
+
+	$(function(){
+		$('a[href^="#"]').click(function(){
+			let speed = 400;
+			let href= $(this).attr("href");
+			let target = $(href == "#" || href == "" ? 'html' : href);
+			let position = target.offset().top;
+			$("html, body").animate({scrollTop:position}, speed, "swing");
+			return false;
+		});
+	});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.page-grid {
+		display: grid;
+	    width: 100%;
+	    height: 150%;
+	    grid-template-columns: 3fr 5fr 3fr;
+        grid-template-rows: 1fr 4fr 5fr 5fr 2fr 1.5fr;
+}
+
+
+/*header*/
+
+.header {
+	grid-area: 1/1/1/4;
+	background-color: black;
+}
+
+
+h1{
+    text-align: left;
+	font-size: 23px;
+	padding-left: 30px;
+	margin-bottom:0px; 
+	color: #FFFFFF;
+	font-family: "Uni Sans Thin",sans-serif;
+	text-decoration: none;
+	border-bottom: 10px
+
+}
+
+/*body*/
+
+
+.body {
+		grid-area: 2/2/2/2;
+		
+
+}
+.workshow {
+	grid-area: 3/2/3/2;
+}
+
+a {
+	text-decoration: none;
+}
+h2{
+    text-align: right;
+	font-size: 60px; 
+	color: rgb(177,177,177);
+	font-family: "Uni Sans Thin",sans-serif;
+	text-decoration: none;
+	line-height: 30px;
+	margin-top: 150px;
+	margin-bottom: 60px
+
+}
+
+
+h3{
+	font-size: 25px;
+	margin-bottom:10px; 
+	margin-top: 30px;
+	color: #928F94;
+	font-family: forma-djr-micro, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+
+}
+
+p{
+	font-size: 23px;
+	color: #928F94;
+	font-family: forma-djr-micro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+
+.p_link{
+	font-size: 20px;
+	text-align: center;
+	color: #928F94;
+    font-family: forma-djr-micro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	transition: all 0.5s ease-out;
+
+}
+
+ .p_link:hover {
+	color: #C6D7FF;
+	text-decoration: underline;
+    }
+
+
+.link.icon {
+	  color: #000;
+	  position: absolute;
+	  display: inline-block;
+	  margin-left: 8px;
+	  margin-top: 10px;
+	  width: 7px;
+	  height: 1px;
+	  background-color: currentColor;
+	  -webkit-transform: rotate(-45deg);
+	          transform: rotate(-45deg);
+	}
+	.link.icon:before {
+	  content: '';
+	  position: absolute;
+	  top: -3px;
+	  left: -7px;
+	  width: 8px;
+	  height: 5px;
+	  border-radius: 2px;
+	  border: solid 1px currentColor;
+	}
+	.link.icon:after {
+	  content: '';
+	  position: absolute;
+	  top: -3px;
+	  right: -7px;
+	  width: 8px;
+	  height: 5px;
+	  border-radius: 2px;
+	  border: solid 1px currentColor;
+	}
+
+ /*footer*/
+
+  footer {
+  	background:black;
+  	height: 50px;
+  	text-align: center;
+  	padding: 10px 0;
+
+
+  }
+
+
+footer a{
+	text-align: center;
+	font-size: 23px;
+	color: rgb(277,277,277);
+	font-family: "Uni Sans Thin",sans-serif;
+	text-decoration: none;
+}
